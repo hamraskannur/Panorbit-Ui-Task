@@ -22,28 +22,24 @@ export default function OneUserProfile({ userData }) {
               <p className="text-gray-400 font- text-xl">
                 username :
                 <span className="text-gray-600 font-bold">
-                  
                   {userData?.username}
                 </span>
               </p>
               <p className="text-gray-400 font- text-xl">
                 E-mail:
                 <span className="text-gray-600 font-bold">
-                  
                   {userData?.email}
                 </span>
               </p>
               <p className="text-gray-400 font- text-xl">
                 Phone :
                 <span className="text-gray-600 font-bold">
-                  
                   {userData?.phone}
                 </span>
               </p>
               <p className="text-gray-400 font- text-xl">
                 Website :
                 <span className="text-gray-600 font-bold">
-                  
                   {userData?.website}
                 </span>
               </p>
@@ -94,23 +90,30 @@ export default function OneUserProfile({ userData }) {
                 <p className="text-gray-400 font- text-xl">
                   City :
                   <span className="text-gray-600 font-bold">
-                    
                     {userData?.address?.city}
                   </span>
                 </p>
                 <p className="text-gray-400 font- text-xl">
                   Zipcode :
                   <span className="text-gray-600 font-bold">
-                    
                     {userData?.address?.zipcode}
                   </span>
                 </p>
               </div>
               <div className="p-2">
                 <div>
-                <div >
-                <iframe className="w-[50vh]  lg:w-[80vh]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1647100.4087135384!2d76.3767635606899!3d11.52009531156279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1679390787229!5m2!1sen!2sin" width="660" height="350" style={{border:"0;"}}  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                  <div>
+                    <iframe
+                      className="w-[50vh]  lg:w-[80vh]"
+                      title="map"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1647100.4087135384!2d76.3767635606899!3d11.52009531156279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1679390787229!5m2!1sen!2sin"
+                      width="660"
+                      height="350"
+                      style={{ border: "0;" }}
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
                 </div>
                 <div className="flex justify-end gap-5 text-xs">
                   <p className="text-gray-400 ">
