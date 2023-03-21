@@ -1,0 +1,74 @@
+.main {
+  @apply
+   fixed 
+   md:static 
+   bottom-0  
+   ml-0 
+   w-full
+   h-20 
+   mb-0
+   md:w-80 
+   md:h-[90vh] 
+   m-8 
+   md:justify-evenly 
+   md:rounded-3xl
+ text-black
+   bg-gradient-to-b
+  from-primary-blue to-secondery-blue 
+   rounded flex;
+}
+.ulClass {
+    @apply
+    my-auto 
+    m-5 
+    md:mx-0 
+    flex 
+    md:flex-col
+      justify-between 
+      w-full 
+      h-fit 
+      md:w-full
+       text-grayed
+}
+.barItem{
+    @apply
+    mx-auto 
+    text-left 
+    cursor-pointer 
+    relative 
+    flex
+     my-5
+}
+.rightCurve{
+    @apply
+    bg-white
+    hidden
+     w-9 
+     h-9
+     rounded-l-full 
+    
+     md:absolute 
+     md:right-0 
+     md:flex 
+     md:flex-col 
+     md:justify-center 
+}
+
+.rightCurve:after,
+.rightCurve:before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 0px;
+}
+
+.rightCurve:after {
+	top: -10px;
+	background: radial-gradient(circle at top left, transparent 10px, white 11px);
+}
+
+.rightCurve:before {
+	bottom: -10px;
+	background: radial-gradient(circle at bottom left, transparent 10px, white 11px);
+}
