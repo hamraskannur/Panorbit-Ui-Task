@@ -28,16 +28,16 @@ export default function MyProfile({ userData }) {
                         <img className='h-24 w-24 rounded-full object-cover' src={userData?.profilepicture} alt="" />
                     </div>
                     <div className='grid gap-2 mt-2'>
-                        <p className='text-center text-2xl'>{userData?.name}</p>
+                        <p className='text-center text-1xl'>{userData?.name}</p>
                         <p className='text-center text-1xl text-gray-500'>{userData?.email}</p>
                     </div>
                 </div>
             </div>
             {twoUsers.length === 2 ?
                 twoUsers?.map((user) => (
-                    user!=undefined && <React.Fragment key={user?.id}>
+                    user!==undefined && <React.Fragment key={user?.id}>
                    <hr   className='mx-5' />
-                    <div className='flex justify-center items-center py-4 cursor-pointer ' onClick={() => navigate('/Profile', { state: user })}>
+                    <div className='flex justify-center items-center py-3 cursor-pointer ' onClick={() => navigate('/Profile', { state: user })}>
                         <div className='flex gap-3 items-center'>
                             <div>
                                 <img className='h-8 w-8 rounded-full object-cover' src={user?.profilepicture} alt="profile" />
@@ -51,7 +51,7 @@ export default function MyProfile({ userData }) {
                 ))
                 : null}
 
-            <div className='flex justify-center py-7'>
+            <div className='flex justify-center py-5'>
                 <Link to={'/'}>
                     <button className='bg-red-600 px-8 py-2 rounded-full font-semibold text-white'>
                         Sign out

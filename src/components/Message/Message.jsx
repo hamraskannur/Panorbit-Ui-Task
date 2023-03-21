@@ -9,7 +9,7 @@ import { RxCross1 } from 'react-icons/rx'
 export default function Message({ user ,setShowMessage}) {
   const [openMessage, setOpenMessage] = useState(true);
   return (
-    <div className="fixed md:right-96 right-0 md:mr-10  bottom-20 md:bottom-0 bg-white shadow-md shadow-gray-400  rounded-t-xl w-full  md:w-80 ">
+    <div className="fixed md:right-80 right-0 md:mr-10  bottom-20 md:bottom-0 bg-white shadow-md shadow-gray-400  rounded-t-xl w-full  md:w-64">
       <div
         className="bg-blue-600 rounded-t-xl py-3 px-5 font-bold text-white flex gap-2 justify-between w-full"
       >
@@ -21,7 +21,10 @@ export default function Message({ user ,setShowMessage}) {
               alt="profileImg"
             />
           </div>
+          <div className="text-xs">
+
             <p>{user.name}</p>
+          </div>
         </div>
             <div onClick={() => setOpenMessage(!openMessage)} className="flex">
 
@@ -37,7 +40,7 @@ export default function Message({ user ,setShowMessage}) {
       </div>
       {openMessage && (
         <>
-          <div className="p-7 pb-12 text-[#6d6d6d] px-5 max-h-80 grid gap-2 overflow-y-scroll">
+          <div className="p-7 pb-12 text-[#6d6d6d] px-5 h-60 grid gap-2 overflow-y-scroll">
             <div className="bg-[#f1f1f1] py-5 px-2 mr-10 rounded-md">
               Lorem ipsum dolor
             </div>
@@ -54,7 +57,7 @@ export default function Message({ user ,setShowMessage}) {
               Lorem ipsu
             </div>
           </div>
-          <div className="flex w-full bg-white border-t-2 px-2 bottom-20  md:bottom-0 border-opacity-20  h-8 border-black md:w-80 fixed overflow-hidden  ">
+          <div className="flex w-full bg-white border-t-2 px-2 bottom-20  md:bottom-0 border-opacity-20  h-8 border-black md:w-64 fixed overflow-hidden  ">
             <div className="w-full ">
               <input className=" outline-none w-full" />
             </div>

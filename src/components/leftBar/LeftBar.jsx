@@ -17,7 +17,7 @@ export default function LeftBar() {
   ];
   
   return (
-    <div className='w-full  md:w-96  md:h-full static'>
+    <div className='w-full  md:w-80  md:h-full static'>
     <div className="flex md:h-full  align-middle md:pl-7">
       <nav className={classes.main}>
         <ul className={classes.ulClass}>

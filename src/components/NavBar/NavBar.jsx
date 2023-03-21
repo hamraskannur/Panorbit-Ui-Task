@@ -27,7 +27,7 @@ const NavBar = ({ userData }) => {
             <div>
               <img className='h-8 w-8 rounded-full object-cover' src={userData.profilepicture} alt="profileImg" />
             </div>
-            <div className='text-md  text-2xl text-black hidden lg:block'>
+            <div className='text-md  text-1xl text-black hidden lg:block'>
               <p>{userData.name}</p>
             </div>
           </div>

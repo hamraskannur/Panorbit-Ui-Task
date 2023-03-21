@@ -22,11 +22,11 @@ export default function Section() {
   return (
 
 
-    <div className="border-2 shadow-lg  rounded-3xl w-[680px] h-[620px] bg-white ">
+    <div className="border-2 shadow-lg  rounded-3xl w-[580px] h-[550px] bg-white ">
       <div className="top text-center  rounded-t-3xl bg-slate-200 pt-5 pb-1 br-t-inherit">
-        <h1 className='m-6 md:m-10 text-2xl font-semibold text-gray-600'>Select an account</h1>
+        <h1 className='m-6 md:m-7 text-2xl font-semibold text-gray-600'>Select an account</h1>
       </div>
-      <div className="rounded-b-lg  h-[450px] overflow-y-scroll">
+      <div className="rounded-b-lg  h-[380px] overflow-y-scroll">
       {users.length>0 && users.map((user)=>(<User key={user.id} user={user}/>))}
       </div>
     </div>

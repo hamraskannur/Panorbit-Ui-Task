@@ -19,16 +19,14 @@ const Chat = ({ setUser ,setShowMessage}) => {
     setShowMessage(true)
  }
   return (
-    <div className=" fixed right-0 md:mr-14 bottom-20 md:bottom-0 bg-white  w-full shadow-md shadow-gray-400 rounded-t-xl md:w-80 ">
+    <div className=" fixed right-0 md:mr-14 bottom-20 md:bottom-0 bg-white  w-full shadow-md shadow-gray-400 rounded-t-xl md:w-72 ">
       <div
         className="  bg-[#0052cc] rounded-t-xl py-3 px-5 text-white flex gap-4 justify-between w-full cursor-pointer"
         onClick={() => setOpenChats(!openChats)}
       >
-        <div className="flex gap-2  ">
-          <span className=" mt-2">
+        <div className="flex gap-2  mt-1">
             {React.createElement(BsChatRight, { size: "25" })}
-          </span>
-          <p className="text-2xl">Chats</p>
+          <p className="text-1xl">Chats</p>
         </div>
         <div className="hover:shadow-inner  shadow-gray-600 px-1 py-1 rounded-full ">
           {!openChats
@@ -50,14 +48,14 @@ const Chat = ({ setUser ,setShowMessage}) => {
                       <img
                         className="h-8 w-8 rounded-full object-cover"
                         src={user.profilepicture}
-                        alt=""
+                        alt="img"
                       />
                     </div>
-                    <div className="text-md font-semibold text-gray-500 ">
+                    <div className=" font-semibold text-gray-500 ">
                       <p>{user.name}</p>
                     </div>
                   </div>
-                  <div className="text-md  text-gray-500 mt-2 ">
+                  <div className=" text-gray-500 mt-2 ">
                   <span className={`${ index%3 ===0? " text-green-500" : " text-[#f1f0f0]" }    rounded-full`}> {React.createElement(GoPrimitiveDot, { size: "20" })}</span>
                   </div>
                 </div>
